@@ -2,6 +2,7 @@ import React from "react";
 import HeroImage from "../assets/IMG-20240904-WA0048.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import Type from "./Type";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-      <div className="small-screen hidden">
+        <div className="small-screen hidden">
           <img
             src={HeroImage}
             alt="profile"
@@ -18,13 +19,20 @@ const Home = () => {
           />
         </div>
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Web Developer
-          </h2>
+          {/* Wrap the text inside a div with fixed min-height */}
+          <div className="text-container min-h-[150px]">
+            <h2 className="text-4xl sm:text-7xl font-bold text-white">
+              Hi, I'm Theo
+            </h2>
+            <h2 className="text-4xl sm:text-7xl font-bold text-white">
+              <Type />
+            </h2>
+          </div>
+          
           <p className="text-gray-500 py-4 max-w-md">
-            I have 2 years of experience building websites and desgining software.
-            I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+            I have 2 years of experience building websites and designing software.
+            I love to work on web applications using technologies like
+            React, Tailwind, Next.js, and GraphQL.
           </p>
 
           <div className="portfolio-btn">
@@ -48,7 +56,6 @@ const Home = () => {
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />
         </div>
-        
       </div>
     </div>
   );
