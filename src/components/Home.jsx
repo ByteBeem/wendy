@@ -1,6 +1,4 @@
 import React from "react";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
 import Type from "./Type";
 
 const Home = () => {
@@ -14,7 +12,7 @@ const Home = () => {
           
         </div>
         <div className="flex flex-col justify-center h-full">
-          {/* Wrap the text inside a div with fixed min-height */}
+          
           <div className="text-container min-h-[150px]">
             <h2 className="text-4xl sm:text-7xl font-bold text-white">
               Hi, I'm Wendy
@@ -30,19 +28,7 @@ const Home = () => {
             React, Tailwind, Next.js, and GraphQL.
           </p>
 
-          <div className="portfolio-btn">
-            <Link
-              to="portfolio"
-              smooth
-              duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-            >
-              Explore Projects
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-              </span>
-            </Link>
-          </div>
+         
         </div>
         <div className="big-screen">
          

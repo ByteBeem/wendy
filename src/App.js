@@ -11,16 +11,20 @@ import NavBar from './components/NavBar';
 function App() {
   return (
     <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-      <SocialLinks />
+      <div className="flex flex-col min-h-screen"> 
+        <NavBar />
+        <div className="flex-grow"> 
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+        <SocialLinks />
+      </div>
     </Router>
   );
 }
