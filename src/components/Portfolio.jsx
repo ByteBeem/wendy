@@ -11,37 +11,37 @@ const Portfolio = () => {
     {
       id: 1,
       src: api,
-      link: 'https://crypto-info-api.cyclic.app/',
+      link: '#',
       repo: ''
     },
     {
       id: 2,
       src: webpostman,
-      link: 'https://webpostman.netlify.app/',
+      link: '#',
       repo: ''
     },
     {
       id: 3,
       src: apod,
-      link: 'https://apodbyrahul.netlify.app/',
+      link: '#',
       repo: ''
     },
     {
       id: 4,
       src: waveportal,
-      link: 'https://waveatrahul.netlify.app/',
+      link: '#',
       repo: ''
     },
     {
       id: 5,
       src: nftportal,
-      link: 'https://nftportalbyrahul.netlify.app/',
+      link: '#',
       repo: ''
     },
     {
       id: 6,
       src: iptracker,
-      link: 'https://trackmyip.netlify.app/',
+      link: '#',
       repo: ''
     },
   ];
