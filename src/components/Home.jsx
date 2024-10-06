@@ -12,17 +12,13 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="small-screen hidden">
-          <img
-            src={HeroImage}
-            alt="profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
-          />
+          
         </div>
         <div className="flex flex-col justify-center h-full">
           {/* Wrap the text inside a div with fixed min-height */}
           <div className="text-container min-h-[150px]">
             <h2 className="text-4xl sm:text-7xl font-bold text-white">
-              Hi, I'm Theo
+              Hi, I'm Wendy
             </h2>
             <h2 className="text-4xl sm:text-7xl font-bold text-white">
               <Type />
