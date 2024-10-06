@@ -1,5 +1,4 @@
 import React from "react";
-import HeroImage from "../assets/IMG-20240904-WA0048.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Type from "./Type";
@@ -46,11 +45,7 @@ const Home = () => {
           </div>
         </div>
         <div className="big-screen">
-          <img
-            src={HeroImage}
-            alt="profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
-          />
+         
         </div>
       </div>
     </div>
